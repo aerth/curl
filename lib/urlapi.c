@@ -1108,7 +1108,7 @@ static CURLUcode guess_scheme(CURLU *u, struct dynbuf *host)
   else if(checkprefix("pop3.", hostname))
     schemep = "pop3";
   else
-    schemep = "http";
+    schemep = "https";
 
   u->scheme = curlx_strdup(schemep);
   if(!u->scheme)
